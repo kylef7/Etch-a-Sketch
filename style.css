@@ -13,8 +13,8 @@ body {
 }
 
 .gridContainer {
-    height: 900px;
     width: 900px;
+    height: 900px;
     border: 2px solid black;
     display: flex;
     flex-wrap: wrap;
