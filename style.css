@@ -47,3 +47,7 @@ button {
 button:hover {
     filter: brightness(0.7);
 }
+
+.darker {
+    background: rgba(0, 0, 0, 0.5); /* Black with 50% transparency */
+}

@@ -12,12 +12,25 @@ function gridCreate(gridSize) {
             newDiv.classList.add("divPixel");
             grid.append(newDiv);
 
+            let amount = 0;
             newDiv.addEventListener("mouseenter", darken);
 
             function darken() {
+                amount = amount + 1;
+                
+                if (amount === 1) {
                 newDiv.style.backgroundColor = "black";
+                newDiv.style.opacity = "0.2";
+                }
+
+                newDiv.style.opacity = amount / 10;
+
+                
+                newDiv.removeEventListener("mouseenter", darken);
+                newDiv.addEventListener("mouseenter", darken);
             }
         
+            
     }
 }
 
