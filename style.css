@@ -4,12 +4,39 @@
     box-sizing: border-box;
 }
 
+
 body {
+    height: 950px;
+    background-image: linear-gradient(rgb(196, 218, 205), rgb(193, 238, 193));
+}
+
+main {
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 20px;
-    background-image: linear-gradient(rgb(196, 218, 205), rgb(193, 238, 193));
+}
+
+.mainWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.gridWrapper {
+    display: flex;
+}
+
+.divLeft, .divRight {
+    width: 300px;
+    padding: 50px;
+}
+
+.divLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-end;
+
 }
 
 .gridContainer {
@@ -34,7 +61,7 @@ body {
     flex-basis: 100%;
 }
 
-button {
+.button {
     margin-top: 20px;
     border: none;
     height: 50px;
@@ -51,4 +78,44 @@ button:hover {
 
 .darker {
     background: rgba(0, 0, 0, 0.5); /* Black with 50% transparency */
+}
+
+.colorButton {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+.yellowButton {
+    background-color: yellow;
+}
+
+.blueButton {
+    background-color: blue;
+}
+
+.eraseButton {
+    margin-top: 50px;
+}
+
+.blackButton {
+    background-color: black;
+}
+
+.rainbowButton {
+    background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,154,0,1) 10%, rgba(208,222,33,1) 20%, rgba(79,220,74,1) 30%, rgba(63,218,216,1) 40%, rgba(47,201,226,1) 50%, rgba(28,127,238,1) 60%, rgba(95,21,242,1) 70%, rgba(186,12,248,1) 80%, rgba(251,7,217,1) 90%, rgba(255,0,0,1) 100%);
+}
+
+.redButton {
+    background-color: red;
+}
+
+.greenButton {
+    background-color: green;
+}
+
+.purpleButton {
+    background-color: purple;
 }
