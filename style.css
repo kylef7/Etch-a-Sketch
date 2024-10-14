@@ -9,22 +9,23 @@ body {
     align-items: center;
     flex-direction: column;
     gap: 20px;
-    background-image: linear-gradient(rgb(255, 255, 255), rgb(214, 214, 209));
+    background-image: linear-gradient(rgb(196, 218, 205), rgb(193, 238, 193));
 }
 
 .gridContainer {
-    width: 900px;
-    height: 900px;
+    width: 800px;
+    height: 800px;
     border: 2px solid black;
     display: flex;
     flex-wrap: wrap;
     align-content: start;
+    background-color: white;
 }
 
 .divPixel {
     aspect-ratio: 1 / 1;
     
-    border: 1px solid black;
+    border: 1px solid transparent;
     flex-grow: 1;
 }
 
@@ -38,7 +39,7 @@ button {
     border: none;
     height: 50px;
     width: 200px;
-    background-color: rgb(27, 27, 27);
+    background-color: #19331A;
     color: white;
     font-size: 14px;
     cursor: pointer;
